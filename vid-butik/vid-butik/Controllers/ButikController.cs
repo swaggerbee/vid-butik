@@ -17,5 +17,9 @@ namespace vid_butik.Controllers
         {
             return View();
         }
+        public ActionResult Vare()
+        {
+            return View();
+        }
     }
 }
