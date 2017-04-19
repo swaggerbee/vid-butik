@@ -13,5 +13,18 @@ namespace vid_butik.Controllers
         {
             return View();
         }
+        public ActionResult Kontakt()
+        {
+            return View();
+        }
+        public ActionResult omos()
+        {
+
+            return View();
+        }
+        public ActionResult mereinfo()
+        {
+            return View();
+        }
     }
 }
