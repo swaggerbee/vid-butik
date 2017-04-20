@@ -14,15 +14,21 @@
 <body>
 
 <header class="container">
-    <img src="~/Content/IMG/Vid-butikken-logo.png" class="offset-by-one two columns" />
-    <nav class="main_nav nine">
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Webshop</a></li>
-            <li><a href="#">Om os</a></li>
-            <li><a href="#">Kontakt</a></li>
-        </ul>
+    <div  class="offset-by-one three columns">
+        <a href="/Index/Index/">
+            <img src="~/Content/IMG/Vid-butikken-logo.png" class="u-max-full-width" />
+        </a>
+    </div>
+    
+    <nav class="main_nav offset-by-three five columns">
+
+        <a href="#">Home</a>
+        <a href="#">Webshop</a>
+        <a href="#">Om os</a>
+        <a href="#">Kontakt</a>
+
     </nav>
+
 </header>
    
         @RenderBody()
