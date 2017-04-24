@@ -22,10 +22,11 @@
     
     <nav class="main_nav offset-by-three five columns">
 
-        <a href="#">Home</a>
-        <a href="#">Webshop</a>
-        <a href="#">Om os</a>
-        <a href="#">Kontakt</a>
+        <a href="/Index/Index/">Home</a>
+        <a href="/Butik/butikken/">Webshop 1</a>
+        <a href="/Butik/butikken1/">Webshop 2</a>
+        <a href="/Index/omos/">Om os</a>
+        <a href="/Index/Kontakt/">Kontakt</a>
 
     </nav>
 
@@ -33,6 +34,36 @@
    
         @RenderBody()
 
+
+    <footer class="container">
+        <div class="three columns">
+            <img src="~/Content/IMG/vidbutikken.jpg" class="u-max-full-width"/></div>
+        <div class="three columns">
+            <ul>
+                <li><p>Vid Butikken</p></li>
+                <li><p>Århusvej 16</p></li>
+                <li><p>8500 Grenaa</p></li>
+                <li><p>cvr.nr 38066498</p></li>
+            </ul>
+        </div>
+        <div class="three columns">
+            <ul>
+                <li><p>Kundeservice</p></li>
+                <li><p>Mobil: 4160 1696</p></li>
+                <li><p>Telefon: 8758 0407</p></li>
+                <li><p>Email: hb@videndjurs.dk</p></li>
+            </ul>
+        </div>
+        <div class="three columns">
+            <ul>
+                <li><a href="/Index/omos/">Om os</a></li>
+                <li><a href="/index/Kontakt/">Kontakt</a></li>
+                <li>
+                    <img src="~/Content/IMG/korttyper.png" />
+                </li>
+            </ul>
+        </div>  
+    </footer>
     <script src="~/Scripts/jquery-1.10.2.min.js"></script>
     <script src="~/Scripts/bootstrap.min.js"></script>
 </body>

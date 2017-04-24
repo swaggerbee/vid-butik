@@ -98,7 +98,9 @@
     </Content>
     <Content Include="Content\IMG\billede-paa-vej.jpg" />
     <Content Include="Content\IMG\cards.png" />
+    <Content Include="Content\IMG\korttyper.png" />
     <Content Include="Content\IMG\Vid-butikken-logo.png" />
+    <Content Include="Content\IMG\vidbutikken.jpg" />
     <Content Include="Content\normalize.css" />
     <Content Include="Content\Site.css" />
     <Content Include="Content\skeleton.css" />
