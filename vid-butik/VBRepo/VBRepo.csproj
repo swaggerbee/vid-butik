@@ -42,7 +42,6 @@
   <ItemGroup>
     <Compile Include="Class1.cs" />
     <Compile Include="DDMF_Full\AutoFac.cs" />
-    <Compile Include="DDMF_Full\autonick.cs" />
     <Compile Include="DDMF_Full\Conn.cs" />
     <Compile Include="DDMF_Full\Mapper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
