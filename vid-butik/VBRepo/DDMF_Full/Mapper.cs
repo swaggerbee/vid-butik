@@ -4,7 +4,7 @@ using System.Data;
 using System.Linq;
 
 
-namespace RepoDeathNote
+namespace VBRepo
 {
     /// <summary>
     /// Data mapperen her har til formål at mappe tabeller og modeller sammen ud fra properties i modellen. 

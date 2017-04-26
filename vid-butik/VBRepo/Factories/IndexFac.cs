@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace VBRepo
 {
-    public class Class1
+    public class IndexFac : AutoFac<Index>
     {
     }
 }

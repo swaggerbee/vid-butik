@@ -1,6 +1,6 @@
 ﻿using System.Data.SqlClient;
 
-namespace RepoDeathNote
+namespace VBRepo
 {
     public static class Conn
     {

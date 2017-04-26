@@ -91,3 +91,5 @@ C:\Users\andr601c\Source\Repos\vid-butik\vid-butik\vid-butik\bin\System.Web.Webp
 C:\Users\andr601c\Source\Repos\vid-butik\vid-butik\vid-butik\bin\System.Web.Webpages.Razor.xml
 C:\Users\andr601c\Source\Repos\vid-butik\vid-butik\vid-butik\bin\System.Web.Helpers.xml
 C:\Users\andr601c\Source\Repos\vid-butik\vid-butik\vid-butik\bin\System.Web.Mvc.xml
+C:\Users\luca0327\Source\Repos\vid-butik\vid-butik\vid-butik\bin\VBRepo.dll
+C:\Users\luca0327\Source\Repos\vid-butik\vid-butik\vid-butik\bin\VBRepo.pdb

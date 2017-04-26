@@ -40,11 +40,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
     <Compile Include="DDMF_Full\AutoFac.cs" />
-    <Compile Include="DDMF_Full\autonick.cs" />
     <Compile Include="DDMF_Full\Conn.cs" />
     <Compile Include="DDMF_Full\Mapper.cs" />
+    <Compile Include="Factories\IndexFac.cs" />
+    <Compile Include="Factories\KontaktFac.cs" />
+    <Compile Include="Factories\MedarbejderFac.cs" />
+    <Compile Include="Factories\Om_OsFac.cs" />
+    <Compile Include="Factories\Vare_infoFac.cs" />
+    <Compile Include="Models\Index.cs" />
+    <Compile Include="Models\Kontakt.cs" />
+    <Compile Include="Models\Medarbejder.cs" />
+    <Compile Include="Models\Om_Os.cs" />
+    <Compile Include="Models\Vare_info.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

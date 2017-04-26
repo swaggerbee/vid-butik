@@ -4,7 +4,7 @@ using System.Data.SqlClient;
 using System.Linq;
 
 
-namespace RepoDeathNote
+namespace VBRepo
 {
     // Koden kan bruges fridt så længe denne tekst bliver i toppen af filen.
     // Copyright 2016 E-train I/S, Udviklet af Henrik Obsen
