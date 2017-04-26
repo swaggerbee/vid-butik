@@ -10,7 +10,7 @@ namespace VBRepo
         /// <returns>Retunere en MS SQL connection string</returns>
         public static SqlConnection GetCon()
         {
-            SqlConnection con = new SqlConnection("server=194.255.108.50;database=dbaBook_22;uid=aBook_22;pwd=eGIe97t3;MultipleActiveResultSets=True");
+            SqlConnection con = new SqlConnection("server=mssql7.unoeuro.com;database=vidbutikken_dk_db;uid=vidbutikken_dk;pwd=h3wnyxa2;MultipleActiveResultSets=True");
             return con;
         }
 
