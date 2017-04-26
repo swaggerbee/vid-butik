@@ -3703,15 +3703,15 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\luca0327\\.nuget\\packages\\": {}
+    "C:\\Users\\andr601c\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\luca0327\\Source\\Repos\\vid-butik\\vid-butik\\RepoVB\\RepoVB.csproj",
+      "projectUniqueName": "C:\\Users\\andr601c\\Source\\Repos\\vid-butik\\vid-butik\\RepoVB\\RepoVB.csproj",
       "projectName": "RepoVB",
-      "projectPath": "C:\\Users\\luca0327\\Source\\Repos\\vid-butik\\vid-butik\\RepoVB\\RepoVB.csproj",
-      "outputPath": "C:\\Users\\luca0327\\Source\\Repos\\vid-butik\\vid-butik\\RepoVB\\obj\\",
+      "projectPath": "C:\\Users\\andr601c\\Source\\Repos\\vid-butik\\vid-butik\\RepoVB\\RepoVB.csproj",
+      "outputPath": "C:\\Users\\andr601c\\Source\\Repos\\vid-butik\\vid-butik\\RepoVB\\obj\\",
       "projectStyle": "PackageReference",
       "originalTargetFrameworks": [
         "netstandard1.4"

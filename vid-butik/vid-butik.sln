@@ -5,7 +5,7 @@ VisualStudioVersion = 15.0.26403.7
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "vid-butik", "vid-butik\vid-butik.csproj", "{F57BB14B-321E-4F33-8376-1AAD6AC46E02}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RepoVB", "RepoVB\RepoVB.csproj", "{8C9CED32-AEF8-4A7E-9333-1623C7FD97A8}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VBRepo", "VBRepo\VBRepo.csproj", "{5C2C4ED3-4838-4C5E-A9ED-561A42F671A6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +17,10 @@ Global
 		{F57BB14B-321E-4F33-8376-1AAD6AC46E02}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F57BB14B-321E-4F33-8376-1AAD6AC46E02}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F57BB14B-321E-4F33-8376-1AAD6AC46E02}.Release|Any CPU.Build.0 = Release|Any CPU
-		{8C9CED32-AEF8-4A7E-9333-1623C7FD97A8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{8C9CED32-AEF8-4A7E-9333-1623C7FD97A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{8C9CED32-AEF8-4A7E-9333-1623C7FD97A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{8C9CED32-AEF8-4A7E-9333-1623C7FD97A8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5C2C4ED3-4838-4C5E-A9ED-561A42F671A6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C2C4ED3-4838-4C5E-A9ED-561A42F671A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5C2C4ED3-4838-4C5E-A9ED-561A42F671A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5C2C4ED3-4838-4C5E-A9ED-561A42F671A6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,0 +1,3 @@
+C:\Users\andr601c\Source\Repos\vid-butik\vid-butik\RepoVB\bin\Debug\netstandard1.4\RepoVB.deps.json
+C:\Users\andr601c\Source\Repos\vid-butik\vid-butik\RepoVB\obj\Debug\netstandard1.4\RepoVB.csprojResolveAssemblyReference.cache
+C:\Users\andr601c\Source\Repos\vid-butik\vid-butik\RepoVB\obj\Debug\netstandard1.4\RepoVB.AssemblyInfo.cs

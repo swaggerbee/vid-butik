@@ -157,9 +157,9 @@
     <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\RepoVB\RepoVB.csproj">
-      <Project>{8c9ced32-aef8-4a7e-9333-1623c7fd97a8}</Project>
-      <Name>RepoVB</Name>
+    <ProjectReference Include="..\VBRepo\VBRepo.csproj">
+      <Project>{5c2c4ed3-4838-4c5e-a9ed-561a42f671a6}</Project>
+      <Name>VBRepo</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
