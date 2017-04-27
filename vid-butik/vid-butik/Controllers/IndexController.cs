@@ -18,7 +18,13 @@ namespace vid_butik.Controllers
         // GET: Index
         public ActionResult Index()
         {
-            return View();
+            ForsideVM FVM = new ForsideVM();
+
+            FVM.forside = FF.Get(1);
+
+            FVM.vare = VIF.GetAll();
+
+            return View(FVM);
         }
         public ActionResult Kontakt()
         {

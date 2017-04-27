@@ -8,7 +8,7 @@ namespace VBRepo
 {
     public class ForsideVM
     {
-        public Forside index { get; set; }
+        public Forside forside { get; set; }
         public List<Vare_info> vare { get; set; }
     }
 }

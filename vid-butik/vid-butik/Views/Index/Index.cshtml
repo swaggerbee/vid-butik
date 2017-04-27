@@ -1,17 +1,19 @@
 ﻿@using VBRepo
 @model VBRepo.ForsideVM
+
+
 @{
     ViewBag.Title = "Index";
 }
 
 <section class="container">
     <div class="offset-by-one six columns">
-        <img class="u-max-full-width" src="~/Content/IMG/@Model.index.IMG" /> <hr />
+        <img class="u-max-full-width" src="~/Content/IMG/@Model.forside.IMG" /> <hr />
         <h2>Vid Butikken Grenaa</h2>
     </div>
     <div class="four columns">
         <h4>velkommen  til vidbutikken</h4>
-        <p>@Model.index.Tekst</p>
+        <p>@Model.forside.Tekst</p>
 
         <a href="/Index/omos/">Læs mere</a>
     </div>
@@ -26,7 +28,7 @@
                 <a href="/Butik/Vare/">læs mere</a>
             </div>
         }
-      
-        
+
+
     </div>
 </section>
