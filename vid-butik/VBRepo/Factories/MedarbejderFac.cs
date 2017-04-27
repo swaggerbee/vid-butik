@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace VBRepo.Factories
+namespace VBRepo
 {
     public class MedarbejderFac : AutoFac<Medarbejder>
     {

@@ -1,24 +1,22 @@
-﻿
+﻿@model  VBRepo.Kontakt
 @{
     ViewBag.Title = "Kontakt";
 }
 
 <div class="container">
-    <div class="six column">
+    <div class="six columns">
         <h1>Kontakt os</h1>
         <h3>åbningstider</h3>
-        <p>mandag - fredag: 10:00 - 17:00</p>
-        <p>lørdag: 10:00 - 15:00</p>
-        <p>søndag: lukket</p>
+        @Model.Tider
         <br />
         <h3>Telefon</h3>
-        <p>12 34 56 78</p>
+        <p>@Model.Telefon</p>
         <h3>Email</h3>
         <br />
-        <p>vidbutik@gmail.com</p>
+        <p>@Model.Mail</p>
     </div>
-    <div class="six column">
-
+    <div class="six columns">
+        @Html.Raw(Model.Map)
     </div> 
 </div>
 
