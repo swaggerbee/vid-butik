@@ -53,6 +53,7 @@
     <Compile Include="Models\Medarbejder.cs" />
     <Compile Include="Models\Om_Os.cs" />
     <Compile Include="Models\Vare_info.cs" />
+    <Compile Include="Models\ViewModels\IndexVM.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

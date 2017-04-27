@@ -27,7 +27,7 @@ namespace vid_butik.Controllers
         public ActionResult omos()
         {
 
-            return View();
+            return View(OOF.Get(1));
         }
         public ActionResult mereinfo()
         {
