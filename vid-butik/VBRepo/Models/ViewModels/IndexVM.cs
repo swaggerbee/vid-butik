@@ -9,6 +9,6 @@ namespace VBRepo
     public class IndexVM
     {
         public Index index { get; set; }
-        public Vare_info vare { get; set; }
+        public List<Vare_info> vare { get; set; }
     }
 }
