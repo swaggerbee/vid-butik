@@ -1,4 +1,8 @@
-﻿header {
+﻿.Ansate {
+  color: cornflowerblue;
+  font-size: 20px;
+}
+header {
   min-height: 125px;
 }
 header img {

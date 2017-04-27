@@ -90,11 +90,11 @@
   <ItemGroup>
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
-    <Content Include="Content\CSS\StyleSheet.css">
-      <DependentUpon>StyleSheet.less</DependentUpon>
+    <Content Include="Content\CSS\MainStyles.css">
+      <DependentUpon>MainStyles.less</DependentUpon>
     </Content>
-    <Content Include="Content\CSS\StyleSheet.min.css">
-      <DependentUpon>StyleSheet.css</DependentUpon>
+    <Content Include="Content\CSS\MainStyles.min.css">
+      <DependentUpon>MainStyles.css</DependentUpon>
     </Content>
     <Content Include="Content\IMG\billede-paa-vej.jpg" />
     <Content Include="Content\IMG\cards.png" />
@@ -104,16 +104,18 @@
     <Content Include="Content\normalize.css" />
     <Content Include="Content\Site.css" />
     <Content Include="Content\skeleton.css" />
-    <Content Include="Content\StyleSheet.css" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
-    <Content Include="Content\CSS\StyleSheet.less" />
+    <Content Include="Content\CSS\Layout.less" />
     <None Include="compilerconfig.json" />
     <None Include="compilerconfig.json.defaults">
       <DependentUpon>compilerconfig.json</DependentUpon>
     </None>
+    <Content Include="Content\CSS\Om_Os.less" />
+    <Content Include="Content\CSS\MainStyles.less" />
+    <Content Include="Content\CSS\Variabler.less" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
