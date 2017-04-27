@@ -93,3 +93,6 @@ C:\Users\andr601c\Source\Repos\vid-butik\vid-butik\vid-butik\bin\System.Web.Help
 C:\Users\andr601c\Source\Repos\vid-butik\vid-butik\vid-butik\bin\System.Web.Mvc.xml
 C:\Users\luca0327\Source\Repos\vid-butik\vid-butik\vid-butik\bin\VBRepo.dll
 C:\Users\luca0327\Source\Repos\vid-butik\vid-butik\vid-butik\bin\VBRepo.pdb
+C:\Users\andr601c\Source\Repos\vid-butik\vid-butik\vid-butik\bin\VBRepo.dll
+C:\Users\andr601c\Source\Repos\vid-butik\vid-butik\vid-butik\bin\VBRepo.pdb
+C:\Users\andr601c\Source\Repos\vid-butik\vid-butik\vid-butik\obj\Debug\vid-butik.csprojResolveAssemblyReference.cache

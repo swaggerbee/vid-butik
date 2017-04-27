@@ -9,7 +9,7 @@ namespace vid_butik.Controllers
 {
     public class IndexController : Controller
     {
-        IndexFac IF = new IndexFac();
+        ForsideFac FF = new ForsideFac();
         KontaktFac KF = new KontaktFac();
         MedarbejderFac MF = new MedarbejderFac();
         Om_OsFac OOF = new Om_OsFac();

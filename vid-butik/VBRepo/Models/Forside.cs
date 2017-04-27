@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace VBRepo
 {
-    public class Index
+    public class Forside
     {
         public int ID { get; set; }
 

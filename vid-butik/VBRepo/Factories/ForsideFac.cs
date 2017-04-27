@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace VBRepo
 {
-    public class IndexFac : AutoFac<Index>
+    public class ForsideFac : AutoFac<Forside>
     {
     }
 }
