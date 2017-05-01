@@ -22,7 +22,7 @@ namespace vid_butik.Controllers
 
             FVM.forside = FF.Get(1);
 
-            FVM.vare = VIF.GetAll();
+            FVM.vare = VIF.NewProduct();
 
             return View(FVM);
         }

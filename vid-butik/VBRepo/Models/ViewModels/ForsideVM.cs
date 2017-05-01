@@ -9,6 +9,6 @@ namespace VBRepo
     public class ForsideVM
     {
         public Forside forside { get; set; }
-        public List<Vare_info> vare { get; set; }
+        public IEnumerable<Vare_info> vare { get; set; }
     }
 }
