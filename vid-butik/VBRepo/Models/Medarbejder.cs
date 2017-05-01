@@ -13,5 +13,7 @@ namespace VBRepo
         public string IMG { get; set; }
 
         public string Tekst { get; set; }
+
+        public string Navn { get; set; }
     }
 }

@@ -32,8 +32,13 @@ namespace vid_butik.Controllers
         }
         public ActionResult omos()
         {
+            Om_OsVM OOVM = new Om_OsVM();
 
-            return View(OOF.Get(1));
+            OOVM.Omos = OOF.Get(1);
+
+            OOVM.Medarbejder = MF.GetAll();
+
+            return View(OOVM);
         }
         public ActionResult mereinfo()
         {

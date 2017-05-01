@@ -1,27 +1,27 @@
-﻿@model VBRepo.Om_Os
+﻿@using VBRepo
+@model VBRepo.Om_OsVM
 @{
     ViewBag.Title = "omos";
 }
 
 <div class="container OmOs_Info">
     <div class="five columns">
-<img src="~/Content/IMG/@Model.IMG" class="u-max-full-width" /></div>
+        <img src="~/Content/IMG/@Model.Omos.IMG" class="u-max-full-width" />
+    </div>
     <div class="seven columns"><p>her kommer der en hel masse tekst om hvordan virksomheden operere og alt sådan noget</p></div>
 </div>
 <section class="container Ansate">
 
-    <div class="four columns">
-        <img src="~/Content/IMG/billede-paa-vej.jpg" class="u-max-full-width" />
-        <h4>her er noget text om  evt en ansat</h4>
-    </div>
-    <div class="four columns">
-        <img src="~/Content/IMG/billede-paa-vej.jpg" class="u-max-full-width" />
-        <h4>her er noget text om  evt en ansat</h4>
-    </div>
-    <div class="four columns">
-        <img src="~/Content/IMG/billede-paa-vej.jpg" class="u-max-full-width" />
-        <h4>her er noget text om  evt en ansat</h4>
-    </div>
+    
+        @foreach (Medarbejder m in Model.Medarbejder)
+        {
+            <div class="four columns">
+                <img src="~/Content/IMG/@m.IMG" class="u-max-full-width" />
+                <h4>@m.Navn</h4>
+                <p>@m.Tekst</p>
+
+            </div>
+        }
 </section>
 
 
