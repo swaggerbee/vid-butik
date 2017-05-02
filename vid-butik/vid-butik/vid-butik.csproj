@@ -117,6 +117,7 @@
     <Content Include="Content\CSS\MainStyles.less" />
     <Content Include="Content\CSS\Variabler.less" />
     <Content Include="Content\CSS\butikken.less" />
+    <Content Include="Content\CSS\Vare.less" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />

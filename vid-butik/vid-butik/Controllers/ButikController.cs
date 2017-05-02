@@ -19,9 +19,9 @@ namespace vid_butik.Controllers
             return View(VIF.GetAll());
         }
 
-        public ActionResult Vare()
+        public ActionResult Vare(int id)
         {
-            return View();
+            return View(VIF.Get(id));
         }
     }
 }

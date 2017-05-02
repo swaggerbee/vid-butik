@@ -1,7 +1,18 @@
-﻿
+﻿@model VBRepo.Vare_info
 @{
-    ViewBag.Title = "Vare";
+    ViewBag.Title = Model.Navn;
 }
 
-<h2>Vare</h2>
+<div class="container Single-vare">
+    <div class="offset-by-one four columns">
+        <img src="~/Content/IMG/@Model.IMG" class="u-max-full-width"/>
+    </div>
+    <div class="seven columns Vare-info">
+        <h4>@Model.Navn</h4>
+        <p>@Model.Tekst</p>
+        <br />
+        <p class="pris">@Model.Pris Kr</p>
+        <a href="#">Tilføj til kurv</a>
+    </div>
 
+</div>

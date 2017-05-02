@@ -46,5 +46,15 @@ footer ul li img {
 }
 .Butikken .Vare a {
   float: right;
-  color: brown;
+}
+.Single-vare p {
+  display: inline;
+  margin: 0;
+}
+.Single-vare .Vare-info p:first-of-type {
+  margin-bottom: 10px;
+  display: inline-block;
+}
+.Single-vare .Vare-info .pris {
+  text-decoration: underline;
 }
