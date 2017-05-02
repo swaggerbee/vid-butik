@@ -1,19 +1,23 @@
-﻿
+﻿@using VBRepo
+@model List<Vare_info>
 @{
     ViewBag.Title = "butikken";
 }
 
-<section class="container">
-    <div class="five columns"><img /></div>
-    <div class="six columns"><p></p> <link rel="#" /></div>
-</section>
-<section class="container">
-    <div class="five columns"><img /></div>
-    <div class="six columns"><p></p> <link rel="#" /></div>
-</section>
-<section class="container">
-    <div class="five columns"><img /></div>
-    <div class="six columns"><p></p> <link rel="#" /></div>
-</section>
+<section class="container Butikken">
 
+    @foreach (Vare_info v in Model)
+    {
+    <div class="Vare">
+        <img src="~/Content/IMG/@v.IMG"/>
+        <h4>@v.Navn</h4>
+        <p>@v.Tekst</p>
+        <hr />
+        <p>@v.Pris kr</p>
+        <a href="#">Læs mere</a>
+    </div>
+
+
+    }
+</section>
 

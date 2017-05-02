@@ -3,20 +3,22 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using VBRepo;
 
 namespace vid_butik.Controllers
 {
     public class ButikController : Controller
     {
+
+
+        Vare_infoFac VIF = new Vare_infoFac();
         // GET: Butik
         public ActionResult butikken()
         {
-            return View();
+
+            return View(VIF.GetAll());
         }
-        public ActionResult butikken1()
-        {
-            return View();
-        }
+
         public ActionResult Vare()
         {
             return View();

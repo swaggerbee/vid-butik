@@ -1,8 +1,4 @@
-﻿.Ansate {
-  color: cornflowerblue;
-  font-size: 20px;
-}
-header {
+﻿header {
   min-height: 125px;
 }
 header img {
@@ -28,4 +24,27 @@ footer ul {
 }
 footer ul li img {
   height: 200px;
+}
+.Ansate {
+  color: cornflowerblue;
+  font-size: 20px;
+}
+.Butikken {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.Butikken .Vare {
+  margin: 2%;
+  width: 25%;
+}
+.Butikken .Vare img {
+  width: 100%;
+}
+.Butikken .Vare p {
+  display: inline;
+}
+.Butikken .Vare a {
+  float: right;
+  color: brown;
 }

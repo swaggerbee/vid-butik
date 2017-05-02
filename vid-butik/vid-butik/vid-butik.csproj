@@ -116,6 +116,7 @@
     <Content Include="Content\CSS\Om_Os.less" />
     <Content Include="Content\CSS\MainStyles.less" />
     <Content Include="Content\CSS\Variabler.less" />
+    <Content Include="Content\CSS\butikken.less" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -123,7 +124,6 @@
     <Content Include="Web.config" />
     <Content Include="Views\Index\Kontakt.cshtml" />
     <Content Include="Views\Butik\butikken.cshtml" />
-    <Content Include="Views\Butik\butikken1.cshtml" />
     <Content Include="Views\Index\omos.cshtml" />
     <Content Include="Views\Index\mereinfo.cshtml" />
   </ItemGroup>
