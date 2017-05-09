@@ -138,6 +138,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Helpers\Uploader.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -158,6 +159,7 @@
     <Content Include="Views\Admin\AdmOmos.cshtml" />
     <Content Include="Views\Admin\AdmButikken.cshtml" />
     <Content Include="Views\Data\BannerKurv.cshtml" />
+    <Content Include="Views\Admin\Admopret.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

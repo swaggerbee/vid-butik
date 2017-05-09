@@ -1,7 +1,20 @@
-﻿
+﻿@model VBRepo.Kontakt
 @{
     ViewBag.Title = "AdmKontakt";
 }
 
 <h2>AdmKontakt</h2>
 
+<form name="myForm" action="/Admin/AdmKontakt/" enctype="multipart/form-data" method="post">
+    Tider: <input type="text" id="tider" name="tider" value="@Model.Tider" />
+    <br />
+    Telefon: <input type="text" id="telefon" name="telefon" value="@Model.Telefon" />
+    <br />
+    Mail: <input type="text" id="mail" name="mail" value="@Model.Mail" />
+    <br />
+
+    <input type="submit" value="Gem" />
+    
+
+    <input type="hidden" id="ID" name="ID" value="@Model.ID" />
+</form>

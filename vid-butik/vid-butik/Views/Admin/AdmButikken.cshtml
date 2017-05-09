@@ -1,10 +1,18 @@
-﻿@model VBRepo.Vare_info
+﻿@using VBRepo
+@model List<Vare_info>
 @{
     ViewBag.Title = "AdmButikken";
 }
 
 <h2>Opret nyt produkt</h2>
+<a href="/Admin/Admopret/">opret</a>
 
-
-<h2>Slet produkt</h2>
-
+<h2>Slet eller rediger produkt</h2>
+@foreach(var t in Model)
+{
+    @t.IMG <br />
+    @t.Navn<br />
+    @t.Pris<br />
+    @t.Tekst<br />
+    <a href="/Admin/AdmButikkenSlet/@t.ID">slet</a><a>Rediger</a>
+}

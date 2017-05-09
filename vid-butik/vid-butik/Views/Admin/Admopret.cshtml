@@ -1,0 +1,18 @@
+﻿
+@{
+    ViewBag.Title = "Admopret";
+}
+
+<h2>Admopret</h2>
+
+<form action="/Admin/AdmButikkenResult/" method="post" enctype="multipart/form-data">
+    IMG: <input type="file" name="IMG" id="img" placeholder="billed" />
+    <br />
+    Navn: <input type="text" id="navn" name="Navn" placeholder="navn" />
+    <br />
+    Tekst: <input type="text" id="tekst" name="Tekst" placeholder="tekst" />
+    <br />
+    Pris: <input type="text" id="pris" name="Pris" placeholder="pris" />
+    <br />
+    <input type="submit" value="gem" />
+</form>

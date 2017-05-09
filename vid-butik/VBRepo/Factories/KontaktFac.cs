@@ -8,5 +8,6 @@ namespace VBRepo
 {
     public class KontaktFac : AutoFac<Kontakt>
     {
+
     }
 }
