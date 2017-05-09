@@ -56,5 +56,34 @@ namespace vid_butik.Controllers
 
             return RedirectToAction("Kurv");
         }
+
+        public ActionResult Sub(int id)
+        {
+            string navn = "vare_" + id;
+
+            int antal = int.Parse(Session[navn].ToString());
+
+            if (antal <= 1)
+            {
+                Session.Remove(navn);
+            }
+            else
+            { 
+            Session[navn] = antal - 1;
+            }
+
+
+            return RedirectToAction("Kurv");
+        }
+
+        public ActionResult Del(int id)
+        {
+            string navn = "vare_" + id;
+            Session.Remove(navn);
+
+            return RedirectToAction("Kurv");
+        }
+
+
     }
 }

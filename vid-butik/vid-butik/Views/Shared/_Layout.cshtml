@@ -27,7 +27,11 @@
         <a href="/Index/Kontakt/">Kontakt</a>
 
     </nav>
-
+    <div class="Kurv">
+        @{ 
+            Html.RenderAction("BannerKurv", "Data");
+        }
+    </div>
 </header>
    
         @RenderBody()
