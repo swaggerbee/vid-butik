@@ -1,0 +1,46 @@
+﻿@using VBRepo
+@model List<Vare_info>
+
+@{
+    ViewBag.Title = "Kurv";
+}
+
+<div class="container">
+    @*<h2>Kurv</h2>*@
+    <table class="Kurv offset-by-two eight columns">
+        <tr class="Kurv-overskrifter">
+            <td>Navn</td>
+            <td></td>
+            <td>Antal</td>
+            <td></td>
+            <td>Pris</td>
+            <td>I alt</td>
+        </tr>
+        @{
+            decimal total = 0;
+        }
+        @foreach (Vare_info Vi in Model)
+        {
+            decimal apris = int.Parse(Session["vare_" + Vi.ID].ToString()) * Vi.Pris;
+            total = total + apris;
+
+                <tr>
+                    <td><a href="/Kurv/Del/@Vi.ID">X</a> @Vi.Navn </td>
+                    <td><a href="/Kurv/Add/@Vi.ID">+</a></td>
+                    <td>@Session["vare_" + Vi.ID].ToString()</td>
+                    <td><a href="/Kurv/Sub/@Vi.ID">-</a></td>
+                    <td>@Vi.Pris DKK</td>
+                    <td>@apris DKK</td>
+                </tr>
+        }
+
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>Total:</td>
+            <td>@total DKK</td>
+        </tr>
+    </table>
+</div>

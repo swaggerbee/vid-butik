@@ -23,5 +23,38 @@ namespace vid_butik.Controllers
         {
             return View(VIF.Get(id));
         }
+
+        public ActionResult Kurv()
+        {
+            List<Vare_info> list = new List<Vare_info>();
+
+            foreach(string ses in Session.Contents)
+            {
+                
+                    int id = int.Parse(ses.Replace("vare_", ""));
+
+                    list.Add(VIF.Get(id));
+
+                
+            }
+
+            return View(list);
+        }
+
+        public ActionResult Add(int id)
+        {
+            string navn = "vare_" + id;
+
+            if (Session[navn] == null) {
+                Session[navn] = 1;
+            }
+            else
+            {
+                Session[navn] = int.Parse(Session[navn].ToString()) + 1;
+            }
+
+
+            return RedirectToAction("Kurv");
+        }
     }
 }

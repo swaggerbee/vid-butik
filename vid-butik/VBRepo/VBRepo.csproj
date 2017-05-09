@@ -53,6 +53,7 @@
     <Compile Include="Models\Medarbejder.cs" />
     <Compile Include="Models\Om_Os.cs" />
     <Compile Include="Models\Vare_info.cs" />
+    <Compile Include="Models\ViewModels\BKurvVM.cs" />
     <Compile Include="Models\ViewModels\ForsideVM.cs" />
     <Compile Include="Models\ViewModels\Om_OsVM.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

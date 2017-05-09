@@ -118,6 +118,7 @@
     <Content Include="Content\CSS\Variabler.less" />
     <Content Include="Content\CSS\butikken.less" />
     <Content Include="Content\CSS\Vare.less" />
+    <Content Include="Content\CSS\Kurv.less" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -148,6 +149,7 @@
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
     <Content Include="Views\Butik\Vare.cshtml" />
+    <Content Include="Views\Butik\Kurv.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

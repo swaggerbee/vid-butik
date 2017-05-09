@@ -16,6 +16,6 @@ namespace VBRepo
 
         public string Tekst { get; set; }
 
-        public string Pris { get; set; }
+        public int Pris { get; set; }
     }
 }
