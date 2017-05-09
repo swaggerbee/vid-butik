@@ -131,6 +131,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\AdminController.cs" />
     <Compile Include="Controllers\ButikController.cs" />
     <Compile Include="Controllers\DataController.cs" />
     <Compile Include="Controllers\IndexController.cs" />
@@ -151,6 +152,11 @@
     <Content Include="Scripts\jquery-1.10.2.min.map" />
     <Content Include="Views\Butik\Vare.cshtml" />
     <Content Include="Views\Butik\Kurv.cshtml" />
+    <Content Include="Views\Admin\AdmIndex.cshtml" />
+    <Content Include="Views\Admin\AdmKontakt.cshtml" />
+    <Content Include="Views\Admin\AdmMereinfo.cshtml" />
+    <Content Include="Views\Admin\AdmOmos.cshtml" />
+    <Content Include="Views\Admin\AdmButikken.cshtml" />
     <Content Include="Views\Data\BannerKurv.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
