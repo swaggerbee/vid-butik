@@ -2,7 +2,7 @@
   min-height: 125px;
 }
 header img {
-  height: 125px;
+  height: 150px;
 }
 .main_nav {
   display: flex;
@@ -57,4 +57,14 @@ footer ul li img {
 }
 .Single-vare .Vare-info .pris {
   text-decoration: underline;
+}
+.Kurv-overskrifter td {
+  font: bold;
+}
+.BannerKurv a img {
+  height: 50px;
+  display: block;
+}
+.BannerKurv a:last-of-type {
+  margin-left: 5px;
 }
