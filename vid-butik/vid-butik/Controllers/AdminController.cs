@@ -14,6 +14,8 @@ namespace vid_butik.Controllers
         // GET: Admin
         KontaktFac KF = new KontaktFac();
         Vare_infoFac vif = new Vare_infoFac();
+        Om_OsFac oof = new Om_OsFac();
+        MedarbejderFac mf = new MedarbejderFac();
         public ActionResult AdmIndex()
         {
             return View();
@@ -81,7 +83,41 @@ namespace vid_butik.Controllers
             {
                 vif.Delete(ID);
             }
-            return RedirectToAction("AdmButikken");
+            return RedirectToAction("AdmMedarbejder");
+        }
+        public ActionResult AdmMedarbejder()
+        {
+            return View(mf.GetAll());
+        }
+        [HttpPost]
+        public ActionResult AdmMedarbejderResult(HttpPostedFileBase IMG, string Navn, string Tekst)
+        {
+            Uploader U = new Uploader();
+            int width = 500;
+            string path = Request.PhysicalApplicationPath + "Content/IMG/";
+            string File = U.UploadImage(IMG, path, width, true);
+
+            Medarbejder m = new Medarbejder();
+            m.IMG = Path.GetFileName(File);
+            m.Navn = Navn;
+            m.Tekst = Tekst;
+            mf.Insert(m);
+            return RedirectToAction("AdmMedarbejder");
+        }
+        public ActionResult AdmMedarbejderSlet(int ID)
+        {
+            string IMG = mf.Get(ID).IMG;
+            string path = Request.PhysicalApplicationPath + "Content/IMG/" + IMG + "";
+            if (System.IO.File.Exists(path))
+            {
+                System.IO.File.Delete(path);
+                mf.Delete(ID);
+            }
+            else
+            {
+                mf.Delete(ID);
+            }
+            return RedirectToAction("AdmMedarbejder");
         }
     }
 }
