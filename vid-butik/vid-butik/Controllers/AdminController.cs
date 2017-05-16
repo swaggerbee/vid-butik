@@ -54,6 +54,10 @@ namespace vid_butik.Controllers
         {
             return View();
         }
+        public ActionResult AdmOpredMed()
+        {
+            return View();
+        }
         [HttpPost]
         public ActionResult AdmButikkenResult(HttpPostedFileBase IMG, string Navn, int Pris, string Tekst)
         {

@@ -96,10 +96,11 @@
     <Content Include="Content\CSS\MainStyles.min.css">
       <DependentUpon>MainStyles.css</DependentUpon>
     </Content>
-    <Content Include="Content\IMG\billede-paa-vej.jpg" />
     <Content Include="Content\IMG\cards.png" />
+    <Content Include="Content\IMG\ingang.jpg" />
     <Content Include="Content\IMG\inkøbskurv.png" />
     <Content Include="Content\IMG\korttyper.png" />
+    <Content Include="Content\IMG\udsalg.jpg" />
     <Content Include="Content\IMG\Vid-butikken-logo.png" />
     <Content Include="Content\IMG\vidbutikken.jpg" />
     <Content Include="Content\normalize.css" />
@@ -161,6 +162,7 @@
     <Content Include="Views\Data\BannerKurv.cshtml" />
     <Content Include="Views\Admin\Admopret.cshtml" />
     <Content Include="Views\Admin\AdmMedarbejder.cshtml" />
+    <Content Include="Views\Admin\AdmOpredMed.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

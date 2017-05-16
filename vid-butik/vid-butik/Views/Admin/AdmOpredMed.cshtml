@@ -1,0 +1,15 @@
+﻿
+@{
+    ViewBag.Title = "AdmOpredMed";
+}
+
+<h2>AdmOpredMed</h2>
+<form action="/Admin/AdmMedarbejderResult/" method="post" enctype="multipart/form-data">
+    IMG: <input type="file" name="IMG" id="img" placeholder="billed" />
+    <br />
+    Navn: <input type="text" id="navn" name="Navn" placeholder="navn" />
+    <br />
+    Tekst: <input type="text" id="tekst" name="Tekst" placeholder="tekst" />
+    <br />
+    <input type="submit" value="gem" />
+</form>
