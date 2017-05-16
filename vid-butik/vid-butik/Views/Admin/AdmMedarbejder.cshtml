@@ -5,7 +5,7 @@
 }
 
 <h2>Opret nyt produkt</h2>
-<a href="/Admin/Admopret/">opret</a>
+<a href="/Admin/AdmOpredMed/">opret</a>
 
 <h2>Slet eller rediger produkt</h2>
 @foreach (var t in Model)
@@ -13,7 +13,7 @@
     @t.IMG <br />
     @t.Navn<br /> 
     @t.Tekst<br />
-    <a href="/Admin/AdmButikkenSlet/@t.ID">slet</a><a>Rediger</a><br /><hr />
+    <a href="/Admin/AdmMedarbejderSlet/@t.ID">slet</a><a>Rediger</a><br /><hr />
 }
 
 
