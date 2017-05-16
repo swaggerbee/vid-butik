@@ -3,21 +3,19 @@
     ViewBag.Title = "Kontakt";
 }
 
-<div class="container">
+<div class="container Kontakt">
     <div class="six columns">
         <h1>Kontakt os</h1>
         <h3>åbningstider</h3>
-        @Model.Tider
-        <br />
-        <h3>Telefon</h3>
-        <p>@Model.Telefon</p>
-        <h3>Email</h3>
-        <br />
-        <p>@Model.Mail</p>
+        <p>@Model.Tider</p>
+        <h3>Ring og få en snak om vores produkter</h3>
+        <p>tlf: @Model.Telefon</p>
+        <h3>Send os en email</h3>
+        <a href="mailto:@Model.Mail">@Model.Mail</a>
     </div>
     <div class="six columns">
         @Html.Raw(Model.Map)
-    </div> 
+    </div>
 </div>
 
 
