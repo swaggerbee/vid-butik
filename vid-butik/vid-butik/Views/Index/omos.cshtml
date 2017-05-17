@@ -1,7 +1,7 @@
-﻿@using VBRepo
+﻿using VBRepo
 @model VBRepo.Om_OsVM
 @{
-    ViewBag.Title = "omos";
+    ViewBag.Title = "Om os";
 }
 
 <div class="container OmOs_Info">
@@ -12,16 +12,15 @@
 </div>
 <section class="container Ansate">
 
-    
-        @foreach (Medarbejder m in Model.Medarbejder)
-        {
-            <div class="four columns">
-                <img src="~/Content/IMG/@m.IMG" class="u-max-full-width" />
-                <h4>@m.Navn</h4>
-                <p>@m.Tekst</p>
 
-            </div>
-        }
+    @foreach (Medarbejder m in Model.Medarbejder)
+    {
+        <div class="Medarbejder">
+            <img src="~/Content/IMG/@m.IMG" class="u-max-full-width" />
+            <h4>@m.Navn</h4>
+            <p>@m.Tekst</p>
+
+        </div>
+    }
 </section>
-
 

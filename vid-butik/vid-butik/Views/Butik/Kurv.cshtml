@@ -10,11 +10,12 @@
     <table class="Kurv offset-by-two eight columns">
         <tr class="Kurv-overskrifter">
             <td>Navn</td>
-            <td></td>
-            <td>Antal</td>
-            <td></td>
+            <td class="add"></td>
+            <td class="antal"><span>Antal</span></td>
+            <td class="sub"></td>
             <td>Pris</td>
-            <td>I alt</td>
+            <td class="i-alt"><span>I alt</span></td>
+            <td></td>
         </tr>
         @{
             decimal total = 0;
@@ -24,23 +25,29 @@
             decimal apris = int.Parse(Session["vare_" + Vi.ID].ToString()) * Vi.Pris;
             total = total + apris;
 
-                <tr>
-                    <td><a href="/Butik/Del/@Vi.ID">X</a> @Vi.Navn </td>
-                    <td><a href="/Butik/Add/@Vi.ID">+</a></td>
-                    <td>@Session["vare_" + Vi.ID].ToString()</td>
-                    <td><a href="/Butik/Sub/@Vi.ID">-</a></td>
-                    <td>@Vi.Pris DKK</td>
-                    <td>@apris DKK</td>
-                </tr>
+            <tr>
+                <td> @Vi.Navn </td>
+                <td class="add"><a href="/Butik/Add/@Vi.ID">+</a></td>
+                <td class="antal">@Session["vare_" + Vi.ID].ToString()</td>
+                <td class="sub"><a href="/Butik/Sub/@Vi.ID">-</a></td>
+                <td>@Vi.Pris DKK</td>
+                <td class="i-alt"><span>@apris DKK</span></td>
+                <td class="slet"><a href="/Butik/Del/@Vi.ID">Slet</a></td>
+            </tr>
         }
 
         <tr>
             <td></td>
+            <td class="add"></td>
             <td></td>
-            <td></td>
-            <td></td>
+            <td class="sub"></td>
             <td>Total:</td>
-            <td>@total DKK</td>
+            <td class="i-alt"><span>@total DKK</span></td>
+            <td class="slet"></td>
         </tr>
     </table>
+
+</div>
+<div class="container">
+    <a href="/Butik/butikken/" class="tilbage offset-by-two ten columns"><span>←</span>Shop vidre</a>
 </div>

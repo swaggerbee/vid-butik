@@ -26,8 +26,13 @@ footer ul li img {
   height: 200px;
 }
 .Ansate {
-  color: cornflowerblue;
   font-size: 20px;
+  display: flex;
+  align-content: space-between;
+  flex-wrap: wrap;
+}
+.Medarbejder {
+  width: 33%;
 }
 .Butikken {
   display: flex;
@@ -59,7 +64,32 @@ footer ul li img {
   text-decoration: underline;
 }
 .Kurv-overskrifter td {
-  font: bold;
+  font-weight: bold;
+}
+.slet {
+  width: 30px;
+  padding: 0;
+}
+.sub,
+.add {
+  width: 30px;
+  padding: 0;
+}
+.add a {
+  float: right;
+}
+.i-alt span {
+  text-align: center;
+}
+.antal {
+  width: 35px;
+  text-align: center;
+}
+.tilbage {
+  text-decoration: none;
+}
+.tilbage span {
+  font-size: 30px;
 }
 .BannerKurv img {
   height: 50px;
