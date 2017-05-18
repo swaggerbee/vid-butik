@@ -167,6 +167,7 @@
     <Content Include="Views\Admin\Admopret.cshtml" />
     <Content Include="Views\Admin\AdmMedarbejder.cshtml" />
     <Content Include="Views\Admin\AdmOpredMed.cshtml" />
+    <Content Include="Views\Admin\AdmButikkenEdit.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

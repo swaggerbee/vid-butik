@@ -40,7 +40,7 @@ namespace vid_butik.Controllers
             }
             else
             {
-                ViewBag.MSG = "du fuckede up";
+                ViewBag.MSG = "prøv igen og husk at udfylde all felter";
             }
 
             return View(KF.Get(1));
@@ -122,6 +122,38 @@ namespace vid_butik.Controllers
                 mf.Delete(ID);
             }
             return RedirectToAction("AdmMedarbejder");
+        }
+        [HttpGet]
+        public ActionResult AdmButikkenEdit(int ID)
+        {
+            
+            return View(vif.Get(ID));
+        }
+        [HttpPost]
+        public ActionResult AdmButikkenEditResult(int ID, string Navn, string Tekst, int Pris, HttpPostedFileBase IMG)
+        {
+            if (IMG != null && Tekst != null && Navn != null)
+            {
+                Uploader U = new Uploader();
+                int width = 500;
+                string path = Request.PhysicalApplicationPath + "Content/IMG/";
+                string File = U.UploadImage(IMG, path, width, true);
+
+                Vare_info vi = new Vare_info();
+                vi.ID = ID;
+                vi.Pris = Pris;
+                vi.Tekst = Tekst;
+                vi.Navn = Navn;
+                vi.IMG = Path.GetFileName(File);
+                vif.Update(vi);
+                ViewBag.MSG = "updateret";
+            }
+            else
+            {
+                ViewBag.MSG = "prøv igen og husk at udfylde all felter";
+            }
+
+            return RedirectToAction("AdmButikken");
         }
     }
 }
