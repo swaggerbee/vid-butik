@@ -87,7 +87,7 @@ namespace vid_butik.Controllers
             {
                 vif.Delete(ID);
             }
-            return RedirectToAction("AdmMedarbejder");
+            return RedirectToAction("AdmButikken");
         }
         public ActionResult AdmMedarbejder()
         {
@@ -97,7 +97,7 @@ namespace vid_butik.Controllers
         public ActionResult AdmMedarbejderResult(HttpPostedFileBase IMG, string Navn, string Tekst)
         {
             Uploader U = new Uploader();
-            int width = 500;
+            int width = 350;
             string path = Request.PhysicalApplicationPath + "Content/IMG/";
             string File = U.UploadImage(IMG, path, width, true);
 
@@ -135,7 +135,7 @@ namespace vid_butik.Controllers
             if (IMG != null && Tekst != null && Navn != null)
             {
                 Uploader U = new Uploader();
-                int width = 500;
+                int width = 350;
                 string path = Request.PhysicalApplicationPath + "Content/IMG/";
                 string File = U.UploadImage(IMG, path, width, true);
 
