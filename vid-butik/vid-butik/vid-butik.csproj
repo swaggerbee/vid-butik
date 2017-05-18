@@ -100,6 +100,7 @@
     <Content Include="Content\CSS\StyleSheet.min.css">
       <DependentUpon>StyleSheet.css</DependentUpon>
     </Content>
+    <Content Include="Content\favicon.ico" />
     <Content Include="Content\IMG\cards.png" />
     <Content Include="Content\IMG\ingang.jpg" />
     <Content Include="Content\IMG\inkøbskurv.png" />

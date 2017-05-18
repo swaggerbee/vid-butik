@@ -1,4 +1,4 @@
-﻿using VBRepo
+﻿@using VBRepo
 @model VBRepo.Om_OsVM
 @{
     ViewBag.Title = "Om os";
@@ -16,7 +16,7 @@
     @foreach (Medarbejder m in Model.Medarbejder)
     {
         <div class="Medarbejder">
-            <img src="~/Content/IMG/@m.IMG" class="u-max-full-width" />
+            <img src="~/Content/IMG/@m.IMG" class="u-full-width" />
             <h4>@m.Navn</h4>
             <p>@m.Tekst</p>
 

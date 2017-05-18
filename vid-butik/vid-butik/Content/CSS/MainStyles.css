@@ -26,6 +26,7 @@ footer ul li img {
   height: 200px;
 }
 .Ansate {
+  margin-top: 20px;
   font-size: 20px;
   display: flex;
   align-content: space-between;
@@ -33,6 +34,15 @@ footer ul li img {
 }
 .Medarbejder {
   width: 33%;
+}
+.Medarbejder img {
+  width: 45%;
+}
+.Medarbejder h4 {
+  font-size: 30px;
+}
+.Medarbejder p {
+  font-size: 20px;
 }
 .Butikken {
   display: flex;
