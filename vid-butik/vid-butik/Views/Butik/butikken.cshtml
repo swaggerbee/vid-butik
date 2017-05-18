@@ -4,20 +4,22 @@
     ViewBag.Title = "butikken";
 }
 
-<section class="container Butikken">
+<section class="Butikken">
 
     @foreach (Vare_info v in Model)
     {
-    <div class="Vare">
-        <img src="~/Content/IMG/@v.IMG"/>
-        <h4>@v.Navn</h4>
-        <p>@v.Tekst</p>u
-        <hr />
-        <p>@v.Pris kr</p>
-        <a href="/Butik/Vare/@v.ID">Læs mere</a>
-    </div>
+        <div class="Vare ">
+            <img src="~/Content/IMG/@v.IMG" />
+            <h4>@v.Navn</h4>
+            <p>@v.Tekst</p>
+            <hr />
+            <p>@v.Pris kr</p>
+            <a href="/Butik/Vare/@v.ID">Læs mere</a>
+        </div>
 
 
     }
+
+    <h1>@ViewBag.test</h1>
 </section>
 

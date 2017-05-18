@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+
 using VBRepo;
 
 namespace vid_butik.Controllers
@@ -16,6 +17,18 @@ namespace vid_butik.Controllers
         public ActionResult butikken()
         {
 
+            var antalVare = VIF.GetAll();
+            var y = antalVare.Count;
+
+            if ((y % 3) == 0)
+            {
+                ViewBag.test = "antallet af vare kan deles med 3";
+            }
+            else
+            {
+                ViewBag.test = "antallet af vare kan ikke deles med 3";
+            }
+
             return View(VIF.GetAll());
         }
 
@@ -28,14 +41,14 @@ namespace vid_butik.Controllers
         {
             List<Vare_info> list = new List<Vare_info>();
 
-            foreach(string ses in Session.Contents)
+            foreach (string ses in Session.Contents)
             {
-                
-                    int id = int.Parse(ses.Replace("vare_", ""));
 
-                    list.Add(VIF.Get(id));
+                int id = int.Parse(ses.Replace("vare_", ""));
 
-                
+                list.Add(VIF.Get(id));
+
+
             }
 
             return View(list);
@@ -45,7 +58,8 @@ namespace vid_butik.Controllers
         {
             string navn = "vare_" + id;
 
-            if (Session[navn] == null) {
+            if (Session[navn] == null)
+            {
                 Session[navn] = 1;
             }
             else
@@ -68,8 +82,8 @@ namespace vid_butik.Controllers
                 Session.Remove(navn);
             }
             else
-            { 
-            Session[navn] = antal - 1;
+            {
+                Session[navn] = antal - 1;
             }
 
 
@@ -87,3 +101,6 @@ namespace vid_butik.Controllers
 
     }
 }
+
+
+
