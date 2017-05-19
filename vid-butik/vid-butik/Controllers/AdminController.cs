@@ -155,5 +155,36 @@ namespace vid_butik.Controllers
 
             return RedirectToAction("AdmButikken");
         }
+        [HttpGet]
+        public ActionResult AdmMedarbejderEdit(int ID)
+        {
+
+            return View(mf.Get(ID));
+        }
+        [HttpPost]
+        public ActionResult AdmMedarbejderEditResult(int ID, string Navn, string Tekst, HttpPostedFileBase IMG)
+        {
+            if (IMG != null && Tekst != null && Navn != null)
+            {
+                Uploader U = new Uploader();
+                int width = 350;
+                string path = Request.PhysicalApplicationPath + "Content/IMG/";
+                string File = U.UploadImage(IMG, path, width, true);
+
+                Medarbejder m = new Medarbejder();
+                m.ID = ID;
+                m.Tekst = Tekst;
+                m.Navn = Navn;
+                m.IMG = Path.GetFileName(File);
+                mf.Update(m);
+                ViewBag.MSG = "updateret";
+            }
+            else
+            {
+                ViewBag.MSG = "prøv igen og husk at udfylde all felter";
+            }
+
+            return RedirectToAction("AdmMedarbejder");
+        }
     }
 }

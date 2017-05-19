@@ -1,0 +1,20 @@
+﻿@using VBRepo
+@model Medarbejder
+@{
+    ViewBag.Title = "AdmMedarbejderEdit";
+}
+
+<h2>AdmMedarbejderEdit</h2>
+<form name="myForm" action="/Admin/AdmMedarbejderEditResult/" enctype="multipart/form-data" method="post">
+    img: <input type="file" id="img" name="img" value="@Model.IMG" />
+    <br />
+    navn: <input type="text" id="navn" name="navn" value="@Model.Navn" />
+    <br />
+    tekst: <input type="text" id="tekst" name="tekst" value="@Model.Tekst" />
+    <br />
+
+    <input type="submit" value="Gem" />
+
+
+    <input type="hidden" id="ID" name="ID" value="@Model.ID" />
+</form>
