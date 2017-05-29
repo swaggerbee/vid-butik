@@ -18,16 +18,30 @@ namespace vid_butik.Controllers
         public ActionResult butikken()
         {
 
-            var antalVare = VIF.GetAll();
-            var y = antalVare.Count;
+            var VareTaeller = VIF.GetAll();
+            var AntalVare = VareTaeller.Count;
 
-            if ((y % 3) == 0)
+            if ((AntalVare % 3) == 0)
             {
                 ViewBag.test = "antallet af vare kan deles med 3";
             }
             else
             {
-                ViewBag.test = "antallet af vare kan ikke deles med 3";
+                do
+                {
+
+                    ViewBag.filler_1 = "<div class='Vare'> </div>";
+
+                    AntalVare = AntalVare + 1;
+
+                    if ((AntalVare % 3) != 0)
+                    {
+                        ViewBag.filler_2 = "<div class='Vare'> </div>";
+
+                        AntalVare = AntalVare + 1;
+                    }
+                }
+                while ((AntalVare % 3) != 0);
             }
 
             return View(VIF.GetAll());
@@ -102,6 +116,5 @@ namespace vid_butik.Controllers
 
     }
 }
-
 
 
