@@ -54,15 +54,15 @@ namespace vid_butik.Controllers
         public ActionResult Login(string email, string password)
         {
             BrugerFac bf = new BrugerFac();
-            Bruger bruger = bf.Login(email.Trim(), Crypto.Hash(password.Trim()));
+            Bruger bruger = bf.Login(email.Trim(),(password.Trim()));
 
             if (bruger.ID > 0)
             {
                 FormsAuthentication.SetAuthCookie(bruger.ID.ToString(), false);
-                Response.Redirect("Admin/AdmIndex");
+                Response.Redirect("/Admin/AdmIndex");
             }
 
-            return Redirect("/Index/Login");
+            return Redirect("/Index/Login"); 
         }
         public ActionResult Logud()
         {
