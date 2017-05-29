@@ -2,7 +2,9 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using System.Web.Helpers;
 using System.Web.Mvc;
+using System.Web.Security;
 using VBRepo;
 
 namespace vid_butik.Controllers
@@ -43,6 +45,29 @@ namespace vid_butik.Controllers
         public ActionResult mereinfo()
         {
             return View();
+        }
+        public ActionResult Login()
+        {
+            return View();
+        }
+        [HttpPost]
+        public ActionResult Login(string email, string password)
+        {
+            BrugerFac bf = new BrugerFac();
+            Bruger bruger = bf.Login(email.Trim(), Crypto.Hash(password.Trim()));
+
+            if (bruger.ID > 0)
+            {
+                FormsAuthentication.SetAuthCookie(bruger.ID.ToString(), false);
+                Response.Redirect("Admin/AdmIndex");
+            }
+
+            return Redirect("/Index/Login");
+        }
+        public ActionResult Logud()
+        {
+            FormsAuthentication.SignOut();
+            return View("Index");
         }
     }
 }

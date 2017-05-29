@@ -45,8 +45,8 @@ C:\Users\luca0327\Source\Repos\vid-butik\vid-butik\vid-butik\bin\System.Web.Mvc.
 C:\Users\luca0327\Source\Repos\vid-butik\vid-butik\vid-butik\obj\Debug\vid-butik.csprojResolveAssemblyReference.cache
 C:\Users\luca0327\Source\Repos\vid-butik\vid-butik\vid-butik\obj\Debug\vid-butik.dll
 C:\Users\luca0327\Source\Repos\vid-butik\vid-butik\vid-butik\obj\Debug\vid-butik.pdb
-C:\Users\andr601c\Source\Repos\vid-butik\vid-butik\vid-butik\obj\Debug\vid-butik.dll
-C:\Users\andr601c\Source\Repos\vid-butik\vid-butik\vid-butik\obj\Debug\vid-butik.pdb
+C:\Users\luca0327\Source\Repos\vid-butik\vid-butik\vid-butik\bin\VBRepo.dll
+C:\Users\luca0327\Source\Repos\vid-butik\vid-butik\vid-butik\bin\VBRepo.pdb
 C:\Users\andr601c\Source\Repos\vid-butik\vid-butik\vid-butik\bin\roslyn\csc.exe
 C:\Users\andr601c\Source\Repos\vid-butik\vid-butik\vid-butik\bin\roslyn\csc.exe.config
 C:\Users\andr601c\Source\Repos\vid-butik\vid-butik\vid-butik\bin\roslyn\csc.rsp
@@ -84,6 +84,8 @@ C:\Users\andr601c\Source\Repos\vid-butik\vid-butik\vid-butik\bin\System.Web.Razo
 C:\Users\andr601c\Source\Repos\vid-butik\vid-butik\vid-butik\bin\System.Web.Webpages.Deployment.dll
 C:\Users\andr601c\Source\Repos\vid-butik\vid-butik\vid-butik\bin\System.Web.Webpages.dll
 C:\Users\andr601c\Source\Repos\vid-butik\vid-butik\vid-butik\bin\System.Web.Webpages.Razor.dll
+C:\Users\andr601c\Source\Repos\vid-butik\vid-butik\vid-butik\bin\VBRepo.dll
+C:\Users\andr601c\Source\Repos\vid-butik\vid-butik\vid-butik\bin\VBRepo.pdb
 C:\Users\andr601c\Source\Repos\vid-butik\vid-butik\vid-butik\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
 C:\Users\andr601c\Source\Repos\vid-butik\vid-butik\vid-butik\bin\System.Web.Razor.xml
 C:\Users\andr601c\Source\Repos\vid-butik\vid-butik\vid-butik\bin\System.Web.Webpages.xml
@@ -91,8 +93,6 @@ C:\Users\andr601c\Source\Repos\vid-butik\vid-butik\vid-butik\bin\System.Web.Webp
 C:\Users\andr601c\Source\Repos\vid-butik\vid-butik\vid-butik\bin\System.Web.Webpages.Razor.xml
 C:\Users\andr601c\Source\Repos\vid-butik\vid-butik\vid-butik\bin\System.Web.Helpers.xml
 C:\Users\andr601c\Source\Repos\vid-butik\vid-butik\vid-butik\bin\System.Web.Mvc.xml
-C:\Users\luca0327\Source\Repos\vid-butik\vid-butik\vid-butik\bin\VBRepo.dll
-C:\Users\luca0327\Source\Repos\vid-butik\vid-butik\vid-butik\bin\VBRepo.pdb
-C:\Users\andr601c\Source\Repos\vid-butik\vid-butik\vid-butik\bin\VBRepo.dll
-C:\Users\andr601c\Source\Repos\vid-butik\vid-butik\vid-butik\bin\VBRepo.pdb
 C:\Users\andr601c\Source\Repos\vid-butik\vid-butik\vid-butik\obj\Debug\vid-butik.csprojResolveAssemblyReference.cache
+C:\Users\andr601c\Source\Repos\vid-butik\vid-butik\vid-butik\obj\Debug\vid-butik.dll
+C:\Users\andr601c\Source\Repos\vid-butik\vid-butik\vid-butik\obj\Debug\vid-butik.pdb

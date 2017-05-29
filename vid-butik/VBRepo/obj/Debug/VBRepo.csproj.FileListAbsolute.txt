@@ -7,4 +7,3 @@ C:\Users\andr601c\Source\Repos\vid-butik\vid-butik\VBRepo\bin\Debug\VBRepo.dll
 C:\Users\andr601c\Source\Repos\vid-butik\vid-butik\VBRepo\bin\Debug\VBRepo.pdb
 C:\Users\andr601c\Source\Repos\vid-butik\vid-butik\VBRepo\obj\Debug\VBRepo.dll
 C:\Users\andr601c\Source\Repos\vid-butik\vid-butik\VBRepo\obj\Debug\VBRepo.pdb
-C:\Users\andr601c\Source\Repos\vid-butik\vid-butik\VBRepo\obj\Debug\VBRepo.csprojResolveAssemblyReference.cache

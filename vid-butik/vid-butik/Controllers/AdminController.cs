@@ -2,12 +2,15 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using System.Web.Helpers;
 using System.Web.Mvc;
+using System.Web.Security;
 using System.IO;
 using VBRepo;
 
 namespace vid_butik.Controllers
 {
+    [Authorize]
     public class AdminController : Controller
     {
 
@@ -16,6 +19,8 @@ namespace vid_butik.Controllers
         Vare_infoFac vif = new Vare_infoFac();
         Om_OsFac oof = new Om_OsFac();
         MedarbejderFac mf = new MedarbejderFac();
+
+        [AllowAnonymous]
         public ActionResult AdmIndex()
         {
             return View();

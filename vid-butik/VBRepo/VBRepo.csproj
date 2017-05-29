@@ -32,6 +32,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -43,11 +44,13 @@
     <Compile Include="DDMF_Full\AutoFac.cs" />
     <Compile Include="DDMF_Full\Conn.cs" />
     <Compile Include="DDMF_Full\Mapper.cs" />
+    <Compile Include="Factories\BrugerFac.cs" />
     <Compile Include="Factories\ForsideFac.cs" />
     <Compile Include="Factories\KontaktFac.cs" />
     <Compile Include="Factories\MedarbejderFac.cs" />
     <Compile Include="Factories\Om_OsFac.cs" />
     <Compile Include="Factories\Vare_infoFac.cs" />
+    <Compile Include="Models\Bruger.cs" />
     <Compile Include="Models\Forside.cs" />
     <Compile Include="Models\Kontakt.cs" />
     <Compile Include="Models\Medarbejder.cs" />
