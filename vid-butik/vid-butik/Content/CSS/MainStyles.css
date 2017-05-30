@@ -110,3 +110,11 @@ footer ul li img {
 .BannerKurv a:last-of-type {
   margin-left: 5px;
 }
+#message {
+  display: none;
+}
+.Kontakt form span {
+  width: 50px;
+  display: inline-block;
+  margin: 2px;
+}

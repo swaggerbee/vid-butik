@@ -9,13 +9,31 @@
         <h3>åbningstider</h3>
         <p>@Model.Tider</p>
         <h3>Ring og få en snak om vores produkter</h3>
-        <p>tlf: @Model.Telefon</p>
+        <p>tlf: +45 @Model.Telefon</p>
         <h3>Send os en email</h3>
-        <a href="mailto:@Model.Mail">@Model.Mail</a>
-    </div>
+        <form name="myForm" mothod="POST" onsubmit="return validerForm(this);" novalidate>
+            <span>Navn:</span> <input id="navn" type="text" />
+            <br />
+            <span> E-mail: </span><input id="email" type="email" />
+            <br />
+            <span> Emne:</span> <input id="emne" type="text" />
+            <br />
+            <textarea id="textbox" type="text"></textarea>
+            <br />
+            <input id="Submit" type="submit" value="Send" />
+
+        </form>
+
+        <div id='message'>
+           <p>Beskeden er sendt!</p>
+        </div>
+        </div>
     <div class="six columns">
         @Html.Raw(Model.Map)
     </div>
 </div>
 
+@section Kontakt{
+<script src="~/Content/Kontakt.js"></script>
+}
 

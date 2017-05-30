@@ -108,6 +108,7 @@
     <Content Include="Content\IMG\udsalg.jpg" />
     <Content Include="Content\IMG\Vid-butikken-logo.png" />
     <Content Include="Content\IMG\vidbutikken.jpg" />
+    <Content Include="Content\Kontakt.js" />
     <Content Include="Content\normalize.css" />
     <Content Include="Content\Site.css" />
     <Content Include="Content\skeleton.css" />
@@ -126,6 +127,7 @@
     <Content Include="Content\CSS\butikken.less" />
     <Content Include="Content\CSS\Vare.less" />
     <Content Include="Content\CSS\Kurv.less" />
+    <Content Include="Content\CSS\Kontakt.less" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
