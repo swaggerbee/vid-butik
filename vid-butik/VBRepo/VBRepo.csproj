@@ -31,6 +31,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data.Linq" />
     <Reference Include="System.Xml.Linq" />
@@ -51,6 +52,7 @@
     <Compile Include="Factories\Om_OsFac.cs" />
     <Compile Include="Factories\Vare_infoFac.cs" />
     <Compile Include="Models\Bruger.cs" />
+    <Compile Include="Models\EmailFormModel.cs" />
     <Compile Include="Models\Forside.cs" />
     <Compile Include="Models\Kontakt.cs" />
     <Compile Include="Models\Medarbejder.cs" />
