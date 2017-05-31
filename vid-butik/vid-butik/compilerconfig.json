@@ -1,14 +1,10 @@
 ﻿[
   {
-    "outputFile": "Content/CSS/StyleSheet.css",
-    "inputFile": "Content/CSS/StyleSheet.less"
-  },
-  {
-    "outputFile": "Content/CSS/StyleSheet.css",
-    "inputFile": "Content/CSS/Om_Os.less"
-  },
-  {
     "outputFile": "Content/CSS/MainStyles.css",
     "inputFile": "Content/CSS/MainStyles.less"
+  },
+  {
+    "outputFile": "Content/CSS/AdminStyles/AdminStyles.css",
+    "inputFile": "Content/CSS/AdminStyles/AdminStyles.less"
   }
 ]

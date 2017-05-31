@@ -5,13 +5,28 @@
 
 }
 
-<h2>AdmOpredMed</h2>
-<form action="/Admin/AdmMedarbejderResult/" method="post" enctype="multipart/form-data">
-    IMG: <input type="file" name="IMG" id="img" placeholder="billed" />
-    <br />
-    Navn: <input type="text" id="navn" name="Navn" placeholder="navn" />
-    <br />
-    Tekst: <input type="text" id="tekst" name="Tekst" placeholder="tekst" />
-    <br />
-    <input type="submit" value="gem" />
-</form>
+<section class="container admOpret">
+    <h2>Opret en ny ansat</h2>
+
+    <form action="/Admin/AdmMedarbejderResult/" method="post" enctype="multipart/form-data">
+
+        <table>
+            <tr>
+                <td>Billede:</td>
+                <td><input type="file" name="IMG" id="img" placeholder="billed" /></td>
+            </tr>
+            <tr>
+                <td>Produkt Navn:</td>
+                <td><input type="text" id="navn" name="Navn" placeholder="navn" /></td>
+            </tr>
+            <tr>
+                <td>Produkt tekst:</td>
+                <td><input type="text" id="tekst" name="Tekst" placeholder="tekst" /></td>
+            </tr>
+        </table>
+
+        <input type="submit" value="Gem" />
+        <br />
+        <a href="/Admin/AdmMedarbejder">Gå tilbage</a>
+    </form>
+</section>

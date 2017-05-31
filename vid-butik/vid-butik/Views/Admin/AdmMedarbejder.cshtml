@@ -4,18 +4,24 @@
     ViewBag.Title = "AdmMedarbejder";
     Layout = "~/Views/Shared/Adm_Layout.cshtml";
 }
+<section class="container admMedarbejder">
+
+    <h2>Opret ny medarbejder</h2>
+    <a href="/Admin/AdmOpredMed/">opret</a>
+
+    <h2>Slet eller rediger en medarbejder</h2>
+    @foreach (var t in Model)
+    {
+        <div class="EditAnsat">
+            <img src="~/Content/IMG/@t.IMG" class="u-max-full-width" />
+            <div class="EAtext">
+                <p>@t.Navn</p>
+                <p>@t.Tekst</p>
+                <a href="/Admin/AdmMedarbejderEdit/@t.ID">Rediger</a><a href="/Admin/AdmMedarbejderSlet/@t.ID">Slet</a><hr />
+            </div>
+        </div>
+
+    }
 
 
-<h2>Opret nyt produkt</h2>
-<a href="/Admin/AdmOpredMed/">opret</a>
-
-<h2>Slet eller rediger produkt</h2>
-@foreach (var t in Model)
-{
-    @t.IMG <br />
-    @t.Navn<br /> 
-    @t.Tekst<br />
-    <a href="/Admin/AdmMedarbejderSlet/@t.ID">slet</a><a href="AdmMedarbejderEdit/@t.ID">Rediger</a><br /><hr />
-}
-
-
+</section>

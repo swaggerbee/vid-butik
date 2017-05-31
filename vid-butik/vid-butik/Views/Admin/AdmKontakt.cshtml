@@ -3,19 +3,31 @@
     ViewBag.Title = "AdmButikken";
     Layout = "~/Views/Shared/Adm_Layout.cshtml";
 }
+<section class="container admKontakt">
+    <h2>Rediger kontakt information</h2>
 
-<h2>AdmKontakt</h2>
+    <form name="myForm" action="/Admin/AdmKontakt/" enctype="multipart/form-data" method="post">
 
-<form name="myForm" action="/Admin/AdmKontakt/" enctype="multipart/form-data" method="post">
-    Tider: <input type="text" id="tider" name="tider" value="@Model.Tider" />
-    <br />
-    Telefon: <input type="text" id="telefon" name="telefon" value="@Model.Telefon" />
-    <br />
-    Mail: <input type="text" id="mail" name="mail" value="@Model.Mail" />
-    <br />
 
-    <input type="submit" value="Gem" />
-    
+        <table>
+            <tr>
+                <td>Rediger tider:</td>
+                <td><input type="text" id="tider" name="tider" value="@Model.Tider" /></td>
+            </tr>
+            <tr>
+                <td>Rediger Telefon nummer</td>
+                <td><input type="text" id="telefon" name="telefon" value="@Model.Telefon" /></td>
+            </tr>
+            <tr>
+                <td>Rediger Email adresse</td>
+                <td><input type="text" id="mail" name="mail" value="@Model.Mail" /></td>
+            </tr>
 
-    <input type="hidden" id="ID" name="ID" value="@Model.ID" />
-</form>
+
+        </table>
+        <input type="submit" value="Gem" />
+
+
+        <input type="hidden" id="ID" name="ID" value="@Model.ID" />
+    </form>
+</section>

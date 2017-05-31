@@ -90,6 +90,12 @@
   <ItemGroup>
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\CSS\AdminStyles\AdminStyles.css">
+      <DependentUpon>AdminStyles.less</DependentUpon>
+    </Content>
+    <Content Include="Content\CSS\AdminStyles\AdminStyles.min.css">
+      <DependentUpon>AdminStyles.css</DependentUpon>
+    </Content>
     <Content Include="Content\CSS\MainStyles.css">
       <DependentUpon>MainStyles.less</DependentUpon>
     </Content>
@@ -131,11 +137,7 @@
     <Content Include="Content\CSS\AdminStyles\AdminStyles.less" />
     <Content Include="Content\CSS\AdminStyles\AdmButikken.less" />
     <Content Include="Content\CSS\AdminStyles\AdmIndex.less" />
-    <Content Include="Content\CSS\AdminStyles\AdmKontakt.less" />
     <Content Include="Content\CSS\AdminStyles\AdmMedarbejder.less" />
-    <Content Include="Content\CSS\AdminStyles\AdmMereInfo.less" />
-    <Content Include="Content\CSS\AdminStyles\AdmOpretMed.less" />
-    <Content Include="Content\CSS\AdminStyles\AdmOpret.less" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />

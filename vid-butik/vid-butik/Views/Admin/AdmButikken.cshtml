@@ -4,19 +4,21 @@
     ViewBag.Title = "AdmButikken";
     Layout = "~/Views/Shared/Adm_Layout.cshtml";
 }
-<section class="container">
+<section class="container admButik">
     <h2>Opret nyt produkt</h2>
-    <a href="/Admin/Admopret/">opret</a>
+    <a href="/Admin/Admopret/">Opret nyt produkt</a>
 
     <h2>Slet eller rediger produkt</h2>
     @foreach (var t in Model)
     {
-    <div>
-        @t.IMG <br />
-        @t.Navn<br />
-        @t.Pris<br />
-        @t.Tekst<br />
-        <a href="/Admin/AdmButikkenSlet/@t.ID">slet</a><a href="/Admin/AdmButikkenEdit/@t.ID">Rediger</a><br /><hr />
+    <div class="EditProdukt">
+        <img  src="~/Content/IMG/@t.IMG" class="u-max-full-width"/>
+        <div class="EPtext">
+            <p>@t.Navn</p>
+            <p>@t.Pris Kr</p>
+            <p>@t.Tekst</p>
+           <a href="/Admin/AdmButikkenEdit/@t.ID">Rediger</a><a href="/Admin/AdmButikkenSlet/@t.ID">Slet</a><hr />
+        </div>
     </div>
     }
 </section>

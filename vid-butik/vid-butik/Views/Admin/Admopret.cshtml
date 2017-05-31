@@ -3,17 +3,32 @@
     ViewBag.Title = "Admopret";
     Layout = "~/Views/Shared/Adm_Layout.cshtml";
 }
+<section class="container admOpret">
+    <h2>Opret et produkt</h2>
 
-<h2>Admopret</h2>
+    <form action="/Admin/AdmButikkenResult/" method="post" enctype="multipart/form-data">
 
-<form action="/Admin/AdmButikkenResult/" method="post" enctype="multipart/form-data">
-    IMG: <input type="file" name="IMG" id="img" placeholder="billed" />
-    <br />
-    Navn: <input type="text" id="navn" name="Navn" placeholder="navn" />
-    <br />
-    Tekst: <input type="text" id="tekst" name="Tekst" placeholder="tekst" />
-    <br />
-    Pris: <input type="text" id="pris" name="Pris" placeholder="pris" />
-    <br />
-    <input type="submit" value="gem" />
-</form>
+        <table>
+            <tr>
+                <td>Billede:</td>
+                <td><input type="file" name="IMG" id="img" placeholder="billed" /></td>
+            </tr>
+            <tr>
+                <td>Produkt Navn:</td>
+                <td><input type="text" id="navn" name="Navn" placeholder="navn" /></td>
+            </tr>
+            <tr>
+                <td>Produkt tekst:</td>
+                <td><input type="text" id="tekst" name="Tekst" placeholder="tekst" /></td>
+            </tr>
+            <tr>
+                <td>Pris</td>
+                <td><input type="text" id="pris" name="Pris" placeholder="pris" /></td>
+            </tr>
+        </table>
+
+        <input type="submit" value="Gem" />
+        <br />
+        <a href="/Admin/AdmButikken">Gå tilbage</a>
+    </form>
+</section>

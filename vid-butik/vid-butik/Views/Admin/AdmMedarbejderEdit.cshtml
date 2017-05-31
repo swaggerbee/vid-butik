@@ -6,17 +6,33 @@
 
 }
 
-<h2>AdmMedarbejderEdit</h2>
-<form name="myForm" action="/Admin/AdmMedarbejderEditResult/" enctype="multipart/form-data" method="post">
-    img: <input type="file" id="img" name="img" value="@Model.IMG" />
-    <br />
-    navn: <input type="text" id="navn" name="navn" value="@Model.Navn" />
-    <br />
-    tekst: <input type="text" id="tekst" name="tekst" value="@Model.Tekst" />
-    <br />
+<section class="container admButikEdit">
+    <h2>Edit @Model.Navn</h2>
 
-    <input type="submit" value="Gem" />
+    <form name="myForm" action="/Admin/AdmMedarbejderEditResult/" enctype="multipart/form-data" method="post">
+        <table>
+            <tr>
+                <td>Billede:</td>
+                <td><input type="file" id="img" name="img" value="@Model.IMG" /></td>
+            </tr>
+            <tr>
+                <td>Produkt Navn:</td>
+                <td>
+                    <input type="text" id="navn" name="navn" value="@Model.Navn" />
+                </td>
+            </tr>
+            <tr>
+                <td>Produkt tekst:</td>
+                <td>
+                    <textarea id="text" name="tekst">@Model.Tekst</textarea>
+                </td>
+            </tr>
+        </table>
+
+        <input type="submit" value="Gem" />
 
 
-    <input type="hidden" id="ID" name="ID" value="@Model.ID" />
-</form>
+        <input type="hidden" id="ID" name="ID" value="@Model.ID" />
+    </form>
+    <a href="/Admin/AdmMedarbejder">Gå tilbage</a>
+</section>

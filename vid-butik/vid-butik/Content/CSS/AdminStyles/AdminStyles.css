@@ -1,0 +1,61 @@
+﻿.admButik h2 {
+  margin-bottom: 10px;
+  font-size: 35px;
+}
+.admButik a {
+  font-size: 20px;
+}
+.admButik .EditProdukt {
+  width: 40%;
+  display: inline-block;
+  margin-right: 9%;
+}
+.admButik .EditProdukt .EPtext p {
+  margin-bottom: 10px;
+}
+.admButik .EditProdukt .EPtext a {
+  padding: 5px;
+}
+.admButikEdit a {
+  font-size: 20px;
+}
+.admButikEdit table tr td {
+  padding: 5px 15px 5px 0;
+}
+.admButikEdit table tr td textarea {
+  padding: 6px;
+  width: 310px;
+}
+table tr:last-child {
+  border-bottom: 1px solid #e1e1e1;
+}
+table tr td {
+  padding: 5px 15px 5px 0;
+  border-bottom: 0;
+}
+table tr textarea {
+  padding: 6px;
+  width: 310px;
+}
+h2 {
+  margin-bottom: 10px;
+  font-size: 35px;
+}
+.admMedarbejder h2 {
+  margin-bottom: 10px;
+  font-size: 35px;
+}
+.admMedarbejder a {
+  font-size: 20px;
+}
+.admMedarbejder .EditAnsat {
+  width: 40%;
+  display: inline-block;
+  margin-right: 9%;
+}
+.admMedarbejder .EditAnsat .EAtext p {
+  margin-bottom: 10px;
+}
+.admMedarbejder .EditAnsat .EAtext a {
+  padding: 5px;
+}
