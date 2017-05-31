@@ -1,6 +1,7 @@
 ﻿
 @{
-    Layout = null;
+    ViewBag.Title = "Login";
+    Layout = "~/Views/Shared/Adm_Layout.cshtml";
 }
 
 <!DOCTYPE html>
@@ -11,7 +12,7 @@
     <title>Login</title>
 </head>
 <body>
-    <div> 
+    <div>
         <form action="/Index/Login" method="post">
             email:
             <br />
@@ -20,8 +21,9 @@
             password:
             <input type="password" name="password" />
             <br />
-            <input type="submit" value="Log-in"/>
+            <input type="submit" value="Log-in" />
         </form>
     </div>
 </body>
 </html>
+

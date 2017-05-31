@@ -67,7 +67,7 @@ namespace vid_butik.Controllers
         public ActionResult Logud()
         {
             FormsAuthentication.SignOut();
-            return View("Index");
+            return RedirectToAction("Index");
         }
     }
 }

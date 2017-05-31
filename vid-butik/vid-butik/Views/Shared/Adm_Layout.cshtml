@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title</title>
+    <link rel="shortcut icon" href="~/Content/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="~/Content/favicon.ico" type="image/x-icon">
+    <link href="~/Content/Site.css" rel="stylesheet" type="text/css" />
+    <script src="~/Scripts/modernizr-2.6.2.js"></script>
+    <link href="~/Content/normalize.css" rel="stylesheet" />
+    <link href="~/Content/skeleton.css" rel="stylesheet" />
+    <link href="~/Content/CSS/MainStyles.css" rel="stylesheet" />
+</head>
+<body>
+    <header class="container">
+        <div class="offset-by-one three columns">
+            <a href="/Index/Index/">
+                <img src="~/Content/IMG/Vid-butikken-logo.png" class="u-max-full-width" />
+            </a>
+        </div>
+
+        <nav class="main_nav offset-by-one five columns">
+
+            <a href="/Admin/AdmIndex/">Home</a>
+            <a href="/Admin/AdmButikken/">Butikken</a>
+            <a href="/Admin/AdmMedarbejder/">ansatte</a>
+            <a href="/Admin/AdmKontakt/">Kontakt</a>
+
+        </nav>
+       
+    </header>
+
+    @RenderBody()
+
+
+    <footer class="container">
+        <div class="offset-by-ten two columns">
+            <ul>
+                <li><a href="/Index/Logud/">logud</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    @RenderSection("Kontakt", required: false)
+    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+</body>
+</html>

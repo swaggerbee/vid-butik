@@ -1,7 +1,18 @@
 ﻿
-
-
-<h2>AdmIndex</h2>
-<p>hvad vil du ændre?</p>
-<a href="AdmButikken/">butikken</a>
-<a href="AdmKontakt/">kontakt</a>
+@{
+    ViewBag.Title = "AdmButikken";
+    Layout = "~/Views/Shared/Adm_Layout.cshtml";
+}
+<div class="container">
+    <h1 class=" offset-by-five three columns">Admin</h1>
+</div>
+<div class="container">
+    <p class=" offset-by-five three columns">hvad vil du ændre?</p>
+</div>
+<div class="container">
+    <div class="offset-by-five">
+        <a class="one column" href="/Admin/AdmButikken/">Butikken</a>
+        <a class="one column" href="/Admin/AdmMedarbejder/">ansatte</a>
+        <a class="one column" href="/Admin/AdmKontakt/">Kontakt</a>
+    </div>
+</div>
