@@ -12,28 +12,39 @@
         <p>tlf: +45 @Model.Telefon</p>
         <h3>Send os en email</h3>
         <form name="myForm" mothod="POST" onsubmit="return validerForm(this);" novalidate>
-            <span>Navn:</span> <input id="navn" type="text" />
-            <br />
-            <span> E-mail: </span><input id="email" type="email" />
-            <br />
-            <span> Emne:</span> <input id="emne" type="text" />
-            <br />
-            <textarea id="textbox" type="text"></textarea>
-            <br />
+            <table>
+                <tr>
+                    <td>Navn:</td>
+                    <td><input id="navn" type="text" /></td>
+                </tr>
+                <tr>
+                    <td>E-mail</td>
+                    <td><input id="email" type="email" /></td>
+                </tr>
+                <tr>
+                    <td>Emne</td>
+                    <td><input id="emne" type="text" /></td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <textarea id="textbox" type="text"></textarea>
+                    </td>
+                </tr>
+            </table>
             <input id="Submit" type="submit" value="Send" />
 
+            <div id='message'>
+                <p>Beskeden er sendt!</p>
+            </div>
         </form>
 
-        <div id='message'>
-           <p>Beskeden er sendt!</p>
-        </div>
         </div>
     <div class="six columns">
         @Html.Raw(Model.Map)
     </div>
 </div>
 
-@section Kontakt{
+@section Scripts{
 <script src="~/Content/Kontakt.js"></script>
 }
 

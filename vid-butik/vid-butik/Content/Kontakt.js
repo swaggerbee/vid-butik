@@ -25,6 +25,8 @@ function validerForm(form) {
     var validate = true;
     var navn = form["navn"].value;
     var email = form["email"].value;
+    var emne = form["emne"].value;
+    var textbox = form["textbox"].value;
 
     if (!isRequired(navn)) {
         alert("Du skal skrive dit navn");
@@ -42,18 +44,24 @@ function validerForm(form) {
 
 
 
-    if ($("#text") == null || $("#text") === "") {
-        alert("Du skal skrive noget tekst");
+    if (!isRequired(emne)) {
+        alert("Du skal skrive et emne");
         validate = false;
         return false;   
     }
 
+    if (!isRequired(textbox)) {
+        alert("Du skal skrive en besked");
+        validate = false;
+        return false;
+    }
+
     if (validate == true) {
 
-        //$("#message").show();
+
         document.getElementById("message").style.display = "block ";
         alert("Din besked er blevet sendt")
-        //return false;
+
 
     }
     return false;
