@@ -20,7 +20,7 @@ namespace vid_butik.Controllers
         Om_OsFac oof = new Om_OsFac();
         MedarbejderFac mf = new MedarbejderFac();
 
-        [AllowAnonymous]
+       
         public ActionResult AdmIndex()
         {
             return View();
