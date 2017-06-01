@@ -17,7 +17,7 @@
             <p>@t.Navn</p>
             <p>@t.Pris Kr</p>
             <p>@t.Tekst</p>
-           <a href="/Admin/AdmButikkenEdit/@t.ID">Rediger</a><a onclick="ValidateSlet" href="/Admin/AdmButikkenSlet/@t.ID">Slet</a><hr />
+           <a href="/Admin/AdmButikkenEdit/@t.ID">Rediger</a><a onclick="Javascript: return confirm('er du sikker på du vil slette?');" href="/Admin/AdmButikkenSlet/@t.ID">Slet</a><hr />
         </div>
     </div>
     }
