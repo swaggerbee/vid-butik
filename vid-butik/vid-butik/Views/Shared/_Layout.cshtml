@@ -7,20 +7,47 @@
     <link rel="shortcut icon" href="~/Content/favicon.ico" type="image/x-icon">
     <link rel="icon" href="~/Content/favicon.ico" type="image/x-icon">
     <link href="~/Content/Site.css" rel="stylesheet" type="text/css" />
+    <script src="~/Content/jquery-3.2.1.min.js"></script>
     <script src="~/Scripts/modernizr-2.6.2.js"></script>
     <link href="~/Content/normalize.css" rel="stylesheet" />
     <link href="~/Content/skeleton.css" rel="stylesheet" />
     <link href="~/Content/CSS/MainStyles.css" rel="stylesheet" />
+    <script src="~/Content/MobilMenu.js"></script>
 </head>
 <body>
 
-<header class="container">
-    <div  class="offset-by-one three columns">
+    <header class="container">
+        <div class="offset-by-one three columns">
+            <nav class="nav_container">
+                <div id="sidebar">
+                    <ul>
+                        <li><a href="/Index/Index/">Home</a></li>
+                        <li><a href="/Butik/butikken/">Webshop</a></li>
+                        <li><a href="/Index/omos/">Om os</a></li>
+                        <li><a href="/Index/Kontakt/">Kontakt</a></li>
+                        <li id="MobileKurv">
+                            @{
+                            Html.RenderAction("BannerKurv", "Data");
+                        }
+                    </li>
+                </ul>
+            </div>
+            <div class="main-menu-content">
+                <div class="swipe-area">
+                    <a data-toggle=".nav_container" id="sidebar-toggle">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </a>
+                </div>
+            </div>
+        </nav>
         <a href="/Index/Index/">
             <img src="~/Content/IMG/Vid-butikken-logo.png" class="u-max-full-width" />
         </a>
+
     </div>
-    
+
     <nav class="main_nav offset-by-one five columns">
 
         <a href="/Index/Index/">Home</a>
@@ -30,48 +57,52 @@
 
     </nav>
     <div class="BannerKurv two columns">
-        @{ 
+        @{
             Html.RenderAction("BannerKurv", "Data");
         }
     </div>
+
+
+
 </header>
-   
-        @RenderBody()
+
+@RenderBody()
 
 
-    <footer class="container">
-        <div class="three columns">
-            <img src="~/Content/IMG/vidbutikken.jpg" class="u-max-full-width"/></div>
-        <div class="three columns">
-            <ul>
-                <li><p>Vid Butikken</p></li>
-                <li><p>Århusvej 16</p></li>
-                <li><p>8500 Grenaa</p></li>
-                <li><p>cvr.nr 38066498</p></li>
-            </ul>
-        </div>
-        <div class="three columns">
-            <ul>
-                <li><p>Kundeservice</p></li>
-                <li><p>Mobil: 4160 1696</p></li>
-                <li><p>Telefon: 8758 0407</p></li>
-                <li><p>Email: hb@videndjurs.dk</p></li>
-            </ul>
-        </div>
-        <div class="three columns">
-            <ul>
-                <li><a href="/Index/omos/">Om os</a></li>
-                <li><a href="/index/Kontakt/">Kontakt</a></li>
-                <li>
-                    <img src="~/Content/IMG/korttyper.png" />
-                </li>
-                <li><a href="/Index/Login/">login</a></li>
-            </ul>
-        </div>  
-    </footer>
+<footer class="container">
+    <div class="three columns">
+        <img src="~/Content/IMG/vidbutikken.jpg" class="u-max-full-width" />
+    </div>
+    <div class="three columns">
+        <ul>
+            <li><p>Vid Butikken</p></li>
+            <li><p>Århusvej 16</p></li>
+            <li><p>8500 Grenaa</p></li>
+            <li><p>cvr.nr 38066498</p></li>
+        </ul>
+    </div>
+    <div class="three columns">
+        <ul>
+            <li><p>Kundeservice</p></li>
+            <li><p>Mobil: 4160 1696</p></li>
+            <li><p>Telefon: 8758 0407</p></li>
+            <li><p>Email: hb@videndjurs.dk</p></li>
+        </ul>
+    </div>
+    <div class="three columns">
+        <ul>
+            <li><a href="/Index/omos/">Om os</a></li>
+            <li><a href="/index/Kontakt/">Kontakt</a></li>
+            <li>
+                <img src="~/Content/IMG/korttyper.png" />
+            </li>
+            <li><a href="/Index/Login/">login</a></li>
+        </ul>
+    </div>
+</footer>
 
-    @RenderSection("Scripts", required: false)
-    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
-    <script src="~/Scripts/bootstrap.min.js"></script>
+@RenderSection("Scripts", required: false)
+<script src="~/Scripts/jquery-1.10.2.min.js"></script>
+<script src="~/Scripts/bootstrap.min.js"></script>
 </body>
 </html>

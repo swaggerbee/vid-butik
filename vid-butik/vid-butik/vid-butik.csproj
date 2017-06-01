@@ -114,7 +114,9 @@
     <Content Include="Content\IMG\udsalg.jpg" />
     <Content Include="Content\IMG\Vid-butikken-logo.png" />
     <Content Include="Content\IMG\vidbutikken.jpg" />
+    <Content Include="Content\jquery-3.2.1.min.js" />
     <Content Include="Content\Kontakt.js" />
+    <Content Include="Content\MobilMenu.js" />
     <Content Include="Content\normalize.css" />
     <Content Include="Content\Site.css" />
     <Content Include="Content\skeleton.css" />
@@ -139,6 +141,8 @@
     <Content Include="Content\CSS\AdminStyles\AdmButikken.less" />
     <Content Include="Content\CSS\AdminStyles\AdmIndex.less" />
     <Content Include="Content\CSS\AdminStyles\AdmMedarbejder.less" />
+    <Content Include="Content\CSS\MobilMenu.less" />
+    <Content Include="Content\MobilMenu.less" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />

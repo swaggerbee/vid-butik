@@ -30,13 +30,13 @@ namespace vid_butik.Controllers
                 do
                 {
 
-                    ViewBag.filler_1 = "<div class='Vare'> </div>";
+                    ViewBag.filler_1 = "<div class='Vare MobilHide'> </div>";
 
                     AntalVare = AntalVare + 1;
 
                     if ((AntalVare % 3) != 0)
                     {
-                        ViewBag.filler_2 = "<div class='Vare'> </div>";
+                        ViewBag.filler_2 = "<div class='Vare MobilHide'> </div>";
 
                         AntalVare = AntalVare + 1;
                     }

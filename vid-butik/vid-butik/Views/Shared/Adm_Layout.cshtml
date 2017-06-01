@@ -7,16 +7,44 @@
     <link rel="shortcut icon" href="~/Content/favicon.ico" type="image/x-icon">
     <link rel="icon" href="~/Content/favicon.ico" type="image/x-icon">
     <link href="~/Content/Site.css" rel="stylesheet" type="text/css" />
+    <script src="~/Content/jquery-3.2.1.min.js"></script>
     <script src="~/Scripts/modernizr-2.6.2.js"></script>
-    <script src="~/Content/validate.js"></script>
     <link href="~/Content/normalize.css" rel="stylesheet" />
     <link href="~/Content/skeleton.css" rel="stylesheet" />
     <link href="~/Content/CSS/MainStyles.css" rel="stylesheet" />
     <link href="~/Content/CSS/AdminStyles/AdminStyles.min.css" rel="stylesheet" />
+    <script src="~/Content/MobilMenu.js"></script>
 </head>
 <body>
     <header class="container">
         <div class="offset-by-one three columns">
+            <nav class="nav_container">
+                <div id="sidebar">
+                    <ul>
+                        <li>
+                            <a href="/Admin/AdmIndex/">Admin Start</a>
+                        </li>
+                        <li>
+                            <a href="/Admin/AdmButikken/">Edit Butikken</a>
+                        </li>
+                        <li>
+                            <a href="/Admin/AdmMedarbejder/">Edit Ansatte</a>
+                        </li>
+                        <li>
+                            <a href="/Admin/AdmKontakt/">Edit Kontakt</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="main-menu-content">
+                    <div class="swipe-area">
+                        <a data-toggle=".nav_container" id="sidebar-toggle">
+                            <span class="bar"></span>
+                            <span class="bar"></span>
+                            <span class="bar"></span>
+                        </a>
+                    </div>
+                </div>
+            </nav>
             <a href="/Index/Index/">
                 <img src="~/Content/IMG/Vid-butikken-logo.png" class="u-max-full-width" />
             </a>
@@ -30,7 +58,7 @@
             <a href="/Admin/AdmKontakt/">Edit Kontakt</a>
 
         </nav>
-       
+
     </header>
 
     @RenderBody()
